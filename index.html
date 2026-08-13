@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Makati Picnic Groves</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff8e7;
+            color: #3d4438;
+        }
+
+        /* HEADER */
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, #7fb069, #a8d08d, #f6c85f);
+            color: white;
+            padding: 55px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 42px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        header p {
+            max-width: 700px;
+            margin: 18px auto;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .welcome {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+
+        /* ABOUT ME */
+
+        section {
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+            text-align: center;
+            border-radius: 18px;
+            box-shadow: 0 5px 15px rgba(80, 100, 60, 0.12);
+        }
+
+        section h2 {
+            color: #5b8c5a;
+            font-size: 30px;
+        }
+
+        section p {
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        section img {
+            width: 220px;
+            height: 160px;
+            object-fit: cover;
+            margin-top: 15px;
+            border-radius: 15px;
+            border: 5px solid #f6d77a;
+        }
+
+
+        /* PLACES */
+
+        .places {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .places h2 {
+            color: #5b8c5a;
+            font-size: 32px;
+        }
+
+        .places-intro {
+            max-width: 700px;
+            margin: 0 auto 30px;
+            line-height: 1.7;
+        }
+
+
+        /* PLACE CARDS */
+
+        .place-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .place {
+            width: 260px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 18px;
+            box-shadow: 0 5px 15px rgba(80, 100, 60, 0.12);
+            transition: transform 0.2s;
+        }
+
+        .place:hover {
+            transform: translateY(-6px);
+        }
+
+        .place img {
+            width: 240px;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .place h3 {
+            color: #d28b32;
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        .place p {
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #e4f1d5;
+            color: #52734d;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+
+        /* PLACE INFORMATION */
+
+        .place-info {
+            background-color: #f3f8e9;
+            padding: 10px;
+            margin: 12px 0;
+            border-radius: 12px;
+        }
+
+        .place-info p {
+            margin: 6px;
+            font-size: 14px;
+        }
+
+        .rating {
+            color: #d28b32;
+            font-weight: bold;
+        }
+
+        .hours {
+            color: #52734d;
+            font-weight: bold;
+        }
+
+
+        /* PICNIC TIPS */
+
+        .tips {
+            max-width: 900px;
+            margin: 50px auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .tips h2 {
+            color: #5b8c5a;
+            font-size: 30px;
+        }
+
+        .tip-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+
+        .tip {
+            background-color: #fff1c7;
+            width: 180px;
+            padding: 18px;
+            border-radius: 15px;
+        }
+
+        .tip h3 {
+            color: #c77d24;
+        }
+
+        .tip p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            margin-top: 60px;
+            padding: 30px 20px;
+            text-align: center;
+            background-color: #5b8c5a;
+            color: white;
+        }
+
+        footer p {
+            margin: 8px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- GUIDE NAME AND TAGLINE -->
+
+    <header>
+
+        <h1>🌿 Makati Picnic Groves 🌼</h1>
+
+        <p>
+            A cheerful guide to green spaces, peaceful parks,
+            and picnic-friendly places around Makati and nearby Manila.
+        </p>
+
+        <div class="welcome">
+            🧺 Pack a picnic and let's explore! 🌳
+        </div>
+
+    </header>
+
+
+    <!-- ABOUT ME -->
+
+    <section>
+
+        <h2>About Me ♡</h2>
+
+        <p>
+            Hi! I'm Mazel. I enjoy discovering peaceful outdoor
+            spaces and created this guide to share places where
+            people can relax, enjoy nature, have picnics, and
+            take a break from the busy city.
+        </p>
+
+        <img
+            src="salcedopark.jpg"
+            alt="Green outdoor space at Salcedo Park">
+
+    </section>
+
+
+    <!-- PLACES -->
+
+    <div class="places">
+
+        <h2>🌳 Picnic Places to Explore</h2>
+
+        <p class="places-intro">
+            Looking for somewhere to slow down for a while?
+            Here are a few green spaces worth exploring for
+            picnics, walks, photos, and relaxing afternoons.
+        </p>
+
+
+        <div class="place-list">
+
+
+            <!-- SALCEDO PARK -->
+
+            <article class="place">
+
+                <img
+                    src="salcedopark.jpg"
+                    alt="Salcedo Park in Makati">
+
+                <h3>🧺 Salcedo Park</h3>
+
+                <span class="tag">
+                    Food • Family • Weekend
+                </span>
+
+                <div class="place-info">
+
+                    <p class="rating">
+                        ⭐ 4.5 / 5
+                    </p>
+
+                    <p class="hours">
+                        🕐 5:00 AM – 10:00 PM
+                    </p>
+
+                </div>
+
+                <p>
+                    Also known as Jaime C. Velasquez Park,
+                    Salcedo Park is a compact green space in
+                    Makati with a grassy area, walking paths,
+                    playground, and seating. It is especially
+                    lively on Saturdays because of the popular
+                    Salcedo Weekend Market.
+                </p>
+
+                <p>
+                    <strong>Best for:</strong> weekend picnics,
+                    families, food trips, walks, and spending
+                    a relaxed morning outdoors.
+                </p>
+
+            </article>
+
+
+            <!-- PACO PARK -->
+
+            <article class="place">
+
+                <img
+                    src="pacopark.jpg"
+                    alt="Paco Park in Manila">
+
+                <h3>🌸 Paco Park</h3>
+
+                <span class="tag">
+                    History • Quiet • Garden
+                </span>
+
+                <div class="place-info">
+
+                    <p class="rating">
+                        ⭐ 4.5 / 5
+                    </p>
+
+                    <p class="hours">
+                        🕐 Usually 6:00/7:00 AM – 5:00 PM
+                    </p>
+
+                </div>
+
+                <p>
+                    Paco Park is a historic garden and former
+                    cemetery in Manila. Its circular walls,
+                    greenery, chapel, and peaceful garden
+                    atmosphere make it a relaxing place to
+                    explore away from the busy streets.
+                </p>
+
+                <p>
+                    <strong>Best for:</strong> quiet walks,
+                    photography, history lovers, and peaceful
+                    afternoons.
+                </p>
+
+            </article>
+
+
+            <!-- WASHINGTON SYCIP PARK -->
+
+            <article class="place">
+
+                <img
+                    src="washingtonsycippark.jpg"
+                    alt="Washington SyCip Park in Makati">
+
+                <h3>🌿 Washington SyCip Park</h3>
+
+                <span class="tag">
+                    Peaceful • Nature • Relax
+                </span>
+
+                <div class="place-info">
+
+                    <p class="rating">
+                        ⭐ 4.6 / 5
+                    </p>
+
+                    <p class="hours">
+                        🕐 6:00 AM – 10:00 PM
+                    </p>
+
+                </div>
+
+                <p>
+                    Tucked among Makati's buildings, Washington
+                    SyCip Park is known for its greenery,
+                    walking paths, benches, shaded areas,
+                    koi pond, and peaceful atmosphere.
+                    It offers a refreshing break from the
+                    surrounding business district.
+                </p>
+
+                <p>
+                    <strong>Best for:</strong> reading,
+                    walking, taking photos, relaxing,
+                    and enjoying a quiet break.
+                </p>
+
+            </article>
+
+
+            <!-- AYALA TRIANGLE -->
+
+            <article class="place">
+
+                <img
+                    src="ayalatrianglescircle.jpg"
+                    alt="Ayala Triangle Gardens in Makati">
+
+                <h3>🌼 Ayala Triangle Gardens</h3>
+
+                <span class="tag">
+                    City • Greenery • Hangout
+                </span>
+
+                <div class="place-info">
+
+                    <p class="rating">
+                        ⭐ 4.6 / 5
+                    </p>
+
+                    <p class="hours">
+                        🕐 6:00 AM – 10:00 PM
+                    </p>
+
+                </div>
+
+                <p>
+                    Ayala Triangle Gardens is a green oasis
+                    in the middle of Makati's business district.
+                    Its trees, gardens, open spaces, and
+                    walkways provide a relaxing place to
+                    spend time while still being close to
+                    cafés and restaurants.
+                </p>
+
+                <p>
+                    <strong>Best for:</strong> friends,
+                    casual picnics, photos, relaxing,
+                    and city sightseeing.
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- PICNIC TIPS -->
+
+    <div class="tips">
+
+        <h2>🧺 Little Picnic Checklist</h2>
+
+        <div class="tip-list">
+
+
+            <div class="tip">
+
+                <h3>🥪 Snacks</h3>
+
+                <p>
+                    Bring easy-to-share food and drinks
+                    for your group.
+                </p>
+
+            </div>
+
+
+            <div class="tip">
+
+                <h3>💧 Water</h3>
+
+                <p>
+                    Stay hydrated, especially when spending
+                    time outside in the warm weather.
+                </p>
+
+            </div>
+
+
+            <div class="tip">
+
+                <h3>🗑️ Clean Up</h3>
+
+                <p>
+                    Keep the parks beautiful by taking
+                    your trash with you.
+                </p>
+
+            </div>
+
+
+            <div class="tip">
+
+                <h3>📸 Camera</h3>
+
+                <p>
+                    Don't forget to capture your favorite
+                    picnic moments!
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            🌿 Makati Picnic Groves 🌿
+        </p>
+
+        <p>
+            Made for picnickers, explorers, and nature lovers. 🧺
+        </p>
+
+    </footer>
+
+
+</body>
+</html>
