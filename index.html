@@ -10,12 +10,12 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f3f8f1;
+            background-color: #f4fbf5;
             color: #333;
         }
 
         header {
-            background: linear-gradient(135deg, #6b9b68, #b7d7a8);
+            background: linear-gradient(135deg, #72b77b, #b9dfb5);
             color: white;
             text-align: center;
             padding: 35px 20px;
@@ -23,7 +23,7 @@
 
         header h1 {
             margin: 0;
-            font-size: 40px;
+            font-size: 42px;
         }
 
         header p {
@@ -39,7 +39,7 @@
 
         nav li {
             display: inline-block;
-            margin: 0 8px;
+            margin: 0 10px;
         }
 
         nav a {
@@ -53,7 +53,7 @@
 
         nav a:hover {
             background-color: white;
-            color: #527b50;
+            color: #4f8d58;
         }
 
         main {
@@ -68,12 +68,7 @@
         }
 
         .welcome h2 {
-            color: #527b50;
-            font-size: 30px;
-        }
-
-        .welcome p {
-            line-height: 1.6;
+            color: #4f8d58;
         }
 
         .places {
@@ -89,7 +84,7 @@
             padding: 20px;
             border-radius: 18px;
             text-align: center;
-            box-shadow: 0 5px 15px rgba(70, 100, 70, 0.15);
+            box-shadow: 0 5px 15px rgba(70, 120, 75, 0.15);
             transition: transform 0.2s;
         }
 
@@ -105,7 +100,7 @@
         }
 
         article h3 {
-            color: #527b50;
+            color: #4f8d58;
             font-size: 21px;
         }
 
@@ -114,17 +109,27 @@
         }
 
         .rating {
-            color: #d49b2a;
+            color: #d68a28;
             font-weight: bold;
         }
 
-        .hours {
-            color: #527b50;
+        .read-more {
+            display: inline-block;
+            margin-top: 10px;
+            background-color: #4f8d58;
+            color: white;
+            text-decoration: none;
+            padding: 9px 16px;
+            border-radius: 20px;
             font-weight: bold;
+        }
+
+        .read-more:hover {
+            background-color: #72b77b;
         }
 
         footer {
-            background-color: #527b50;
+            background-color: #4f8d58;
             color: white;
             text-align: center;
             padding: 25px;
@@ -135,159 +140,176 @@
 
 <body>
 
-    <header>
+<header>
 
-        <h1>🌿 Makati Picnic Groves 🧺</h1>
+    <h1>🌿 Makati Picnic Groves 🌿</h1>
+
+    <p>
+        Simple and relaxing green spaces around Makati
+        for picnics, walks, and peaceful afternoons.
+    </p>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="welcome">
+
+        <h2>🌳 Find Your Perfect Picnic Spot</h2>
 
         <p>
-            Simple green escapes around Makati for picnics, walks,
-            relaxing afternoons, and spending time outdoors.
+            Looking for somewhere green and relaxing in the city?
+            Here are some of my favorite places to visit, unwind,
+            and enjoy a little break from the busy streets of Makati.
         </p>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    </section>
 
-    </header>
 
-    <main>
+    <section class="places">
 
-        <section class="welcome">
 
-            <h2>🌳 Picnic Spots Worth Visiting</h2>
+        <!-- AYALA TRIANGLE -->
+
+        <article>
+
+            <img
+                src="ayalatrianglescircle.jpg"
+                alt="Green space at Ayala Triangle Gardens">
+
+            <h3>Ayala Triangle Gardens</h3>
 
             <p>
-                Looking for a little break from the busy city?
-                Here are some green spaces around Makati where
-                you can relax, enjoy a picnic, take a walk,
-                or simply spend some quiet time outdoors.
+                A peaceful green space in the middle of Makati,
+                perfect for walking, relaxing, and enjoying the city.
             </p>
 
-        </section>
+            <p class="rating">⭐ 4.6/5</p>
 
-        <section class="places">
+            <a class="read-more" href="places/ayala-triangle-gardens.html">
+                Read More ✨
+            </a>
 
-            <article>
-
-                <img
-                    src="salcedopark.jpg"
-                    alt="Salcedo Park in Makati">
-
-                <h3>🌳 Salcedo Park</h3>
-
-                <p class="rating">
-                    ⭐ 4.5/5
-                </p>
-
-                <p class="hours">
-                    🕒 Open daily
-                </p>
-
-                <p>
-                    A popular green space in the heart of Makati.
-                    Salcedo Park is a relaxing place for a picnic,
-                    morning walk, casual hangout, or a peaceful
-                    break surrounded by the city.
-                </p>
-
-            </article>
+        </article>
 
 
-            <article>
+        <!-- PACO PARK -->
 
-                <img
-                    src="pacopark.jpg"
-                    alt="Paco Park in Manila">
+        <article>
 
-                <h3>🌿 Paco Park</h3>
+            <img
+                src="pacopark.jpg"
+                alt="Green gardens and pathways at Paco Park">
 
-                <p class="rating">
-                    ⭐ 4.4/5
-                </p>
+            <h3>Paco Park</h3>
 
-                <p class="hours">
-                    🕒 Daytime visits
-                </p>
+            <p>
+                A historic and peaceful garden where visitors
+                can enjoy greenery and a slower atmosphere.
+            </p>
 
-                <p>
-                    A historic and peaceful garden surrounded by
-                    greenery. Paco Park offers a quieter atmosphere
-                    away from the busy streets and is a lovely place
-                    for a slow walk and a relaxing outdoor visit.
-                </p>
+            <p class="rating">⭐ 4.5/5</p>
 
-            </article>
+            <a class="read-more" href="places/paco-park.html">
+                Read More ✨
+            </a>
+
+        </article>
 
 
-            <article>
+        <!-- PICNIC GROVE -->
 
-                <img
-                    src="washingtonsycippark.jpg"
-                    alt="Washington SyCip Park in Makati">
+        <article>
 
-                <h3>🌱 Washington SyCip Park</h3>
+            <img
+                src="picnic.jpg"
+                alt="Picnic area surrounded by greenery">
 
-                <p class="rating">
-                    ⭐ 4.5/5
-                </p>
+            <h3>Picnic Grove</h3>
 
-                <p class="hours">
-                    🕒 Open daily
-                </p>
+            <p>
+                A relaxing outdoor spot for picnics, fresh air,
+                and spending quality time with friends and family.
+            </p>
 
-                <p>
-                    A beautifully maintained green space in Makati
-                    with plenty of plants, trees, and peaceful
-                    corners. It is a great choice when you want
-                    somewhere calm to sit, walk, or enjoy a quiet
-                    outdoor break.
-                </p>
+            <p class="rating">⭐ 4.4/5</p>
 
-            </article>
+            <a class="read-more" href="places/picnic-grove.html">
+                Read More ✨
+            </a>
+
+        </article>
 
 
-            <article>
+        <!-- SALCEDO PARK -->
 
-                <img
-                    src="ayalatrianglescircle.jpg"
-                    alt="Ayala Triangle Gardens in Makati">
+        <article>
 
-                <h3>🌳 Ayala Triangle Gardens</h3>
+            <img
+                src="salcedopark.jpg"
+                alt="Green open space at Salcedo Park">
 
-                <p class="rating">
-                    ⭐ 4.6/5
-                </p>
+            <h3>Salcedo Park</h3>
 
-                <p class="hours">
-                    🕒 Open daily
-                </p>
+            <p>
+                A popular neighborhood park where people can
+                relax, walk around, and enjoy open green space.
+            </p>
 
-                <p>
-                    A well-known urban garden surrounded by Makati's
-                    skyscrapers. With its open spaces and greenery,
-                    it is a convenient spot for walking, relaxing,
-                    meeting friends, or enjoying a quick picnic.
-                </p>
+            <p class="rating">⭐ 4.5/5</p>
 
-            </article>
+            <a class="read-more" href="places/salcedo-park.html">
+                Read More ✨
+            </a>
 
-        </section>
+        </article>
 
-    </main>
 
-    <footer>
+        <!-- WASHINGTON SYCIP PARK -->
 
-        <p>🌿 Makati Picnic Groves 🧺</p>
+        <article>
 
-        <p>
-            Made for anyone looking for a little green escape in the city. 💚
-        </p>
+            <img
+                src="washingtonsycippark.jpg"
+                alt="Green gardens at Washington SyCip Park">
 
-    </footer>
+            <h3>Washington SyCip Park</h3>
+
+            <p>
+                A calm garden in the city with greenery,
+                shaded areas, and a relaxing atmosphere.
+            </p>
+
+            <p class="rating">⭐ 4.6/5</p>
+
+            <a class="read-more" href="places/washington-sycip-park.html">
+                Read More ✨
+            </a>
+
+        </article>
+
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>🌿 Makati Picnic Groves 🌿</p>
+
+    <p>A little guide to finding green spaces in the city.</p>
+
+</footer>
 
 </body>
 </html>
