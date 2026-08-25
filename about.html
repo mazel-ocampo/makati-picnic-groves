@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,12 +11,12 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f3f8f1;
+            background-color: #f4fbf5;
             color: #333;
         }
 
         header {
-            background: linear-gradient(135deg, #6b9b68, #b7d7a8);
+            background: linear-gradient(135deg, #72b77b, #b9dfb5);
             color: white;
             text-align: center;
             padding: 35px 20px;
@@ -23,7 +24,12 @@
 
         header h1 {
             margin: 0;
-            font-size: 40px;
+            font-size: 42px;
+        }
+
+        header p {
+            font-size: 17px;
+            margin: 10px 0 20px;
         }
 
         nav ul {
@@ -34,7 +40,7 @@
 
         nav li {
             display: inline-block;
-            margin: 0 8px;
+            margin: 0 10px;
         }
 
         nav a {
@@ -48,43 +54,55 @@
 
         nav a:hover {
             background-color: white;
-            color: #527b50;
+            color: #4f8d58;
         }
 
         main {
-            max-width: 800px;
-            margin: 45px auto;
+            max-width: 900px;
+            margin: 40px auto;
             padding: 20px;
         }
 
-        section {
+        .about-card {
             background-color: white;
             padding: 35px;
             border-radius: 20px;
-            box-shadow: 0 5px 15px rgba(70, 100, 70, 0.15);
+            box-shadow: 0 5px 15px rgba(70, 120, 75, 0.15);
             text-align: center;
         }
 
-        section h2 {
-            color: #527b50;
+        .about-card h2 {
+            color: #4f8d58;
             font-size: 30px;
         }
 
-        section p {
-            line-height: 1.8;
+        .about-card p {
+            line-height: 1.7;
+            text-align: left;
         }
 
-        section img {
-            width: 100%;
-            max-width: 500px;
-            height: 250px;
-            object-fit: cover;
+        .about-image {
+            width: 600px;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 25px auto;
+            border-radius: 18px;
+        }
+
+        .highlight {
+            background-color: #edf7ed;
+            padding: 20px;
             border-radius: 15px;
-            margin-top: 15px;
+            margin-top: 25px;
+        }
+
+        .highlight h3 {
+            color: #4f8d58;
         }
 
         footer {
-            background-color: #527b50;
+            background-color: #4f8d58;
             color: white;
             text-align: center;
             padding: 25px;
@@ -95,68 +113,92 @@
 
 <body>
 
-    <header>
+<header>
 
-        <h1>🌿 Makati Picnic Groves 🧺</h1>
+    <h1>🌿 Makati Picnic Groves 🌿</h1>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <p>
+        A simple guide to finding peaceful green spaces in the city.
+    </p>
 
-    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-    <main>
+</header>
 
-        <section>
 
-            <h2>💚 About Me</h2>
+<main>
+
+    <section class="about-card">
+
+        <h2>🌱 About Makati Picnic Groves</h2>
+
+        <img
+            class="about-image"
+            src="picnic.jpg"
+            alt="A picnic setup surrounded by greenery">
+
+        <p>
+            Welcome to Makati Picnic Groves! This guide was created
+            for people who want to discover peaceful green spaces
+            while staying close to the busy city.
+        </p>
+
+        <p>
+            I chose this topic because Makati is known for its
+            buildings, offices, shopping areas, and busy streets,
+            but it also has beautiful parks and outdoor spaces where
+            people can slow down and enjoy a little break from city
+            life.
+        </p>
+
+        <p>
+            Whether you want to take a quiet walk, enjoy some fresh
+            air, take photographs, meet friends, or simply find a
+            relaxing place to sit, these parks offer different ways
+            to enjoy the outdoors.
+        </p>
+
+        <div class="highlight">
+
+            <h3>✨ Why Trust These Recommendations?</h3>
 
             <p>
-                Hi! I'm Mazel Ocampo, and I created Makati Picnic Groves
-                as a simple guide for people who want to discover
-                relaxing green spaces around the city.
+                The places featured in this guide were chosen because
+                they offer accessible green spaces and enjoyable
+                outdoor experiences. The recommendations focus on
+                practical details such as location, opening hours,
+                atmosphere, and what each place is best suited for.
             </p>
 
             <p>
-                I chose this topic because Makati is often associated
-                with busy streets, offices, shopping centers, and
-                skyscrapers. However, there are also peaceful parks
-                and gardens where people can slow down, enjoy some
-                fresh air, and spend time with friends or family.
+                I also wanted this guide to be simple and easy to use,
+                so visitors can quickly find a place that matches the
+                kind of outdoor experience they are looking for.
             </p>
 
-            <p>
-                My recommendations focus on places that are enjoyable
-                for picnics, walks, casual hangouts, and quiet breaks.
-                I included details such as location information,
-                opening hours, ratings, and descriptions to make it
-                easier to decide which place might suit your visit.
-            </p>
+        </div>
 
-            <p>
-                I hope this guide helps visitors discover the greener
-                and more relaxing side of Makati. 🌳✨
-            </p>
+    </section>
 
-            <img
-                src="picnic.jpg"
-                alt="A picnic setup representing relaxing outdoor time">
+</main>
 
-        </section>
 
-    </main>
+<footer>
 
-    <footer>
+    <p>🌿 Makati Picnic Groves 🌿</p>
 
-        <p>🌿 Makati Picnic Groves 🧺</p>
+    <p>
+        A little guide to finding green spaces in the city.
+    </p>
 
-        <p>Find your little green escape. 💚</p>
-
-    </footer>
+</footer>
 
 </body>
 </html>
+```
