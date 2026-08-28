@@ -1,211 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Paco Park - Makati Picnic Groves</title>
+    <title>Paco Park | Makati Picnic Groves</title>
 
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f4fbf5;
+            background-color: #f4fff6;
             color: #333;
         }
 
         header {
-            background: linear-gradient(135deg, #72b77b, #b9dfb5);
+            background: linear-gradient(135deg, #5b9a6f, #9bcf9f);
             color: white;
             text-align: center;
             padding: 35px 20px;
         }
 
-        header h2 {
-            margin: 0;
-            font-size: 30px;
-        }
-
         nav ul {
             list-style: none;
             padding: 0;
-            margin: 20px 0 0;
         }
 
         nav li {
             display: inline-block;
-            margin: 0 10px;
+            margin: 5px;
         }
 
         nav a {
             color: white;
             text-decoration: none;
             font-weight: bold;
-            background-color: rgba(255,255,255,0.2);
             padding: 9px 16px;
+            background-color: rgba(255,255,255,0.2);
             border-radius: 20px;
         }
 
-        nav a:hover {
-            background-color: white;
-            color: #4f8d58;
-        }
-
         main {
-            max-width: 900px;
+            max-width: 850px;
             margin: 40px auto;
             padding: 20px;
         }
 
-        .place-detail {
-            background-color: white;
-            padding: 35px;
-            border-radius: 20px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(70,120,75,0.15);
+        section {
+            background: white;
+            padding: 30px;
+            border-radius: 18px;
+            margin-bottom: 35px;
         }
 
-        h1 {
-            color: #4f8d58;
-            font-size: 36px;
-        }
-
-        .place-detail img {
-            width: 600px;
-            max-width: 100%;
+        img {
+            width: 100%;
             height: auto;
             display: block;
-            margin: 20px auto;
-            border-radius: 18px;
+            border-radius: 15px;
         }
 
-        .description {
+        p {
             line-height: 1.7;
-            text-align: left;
+        }
+
+        h2 {
+            color: #4d8560;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 25px;
         }
 
         th, td {
-            border: 1px solid #ddd;
-            padding: 14px;
+            border: 1px solid #b7d8bd;
+            padding: 12px;
             text-align: left;
         }
 
         th {
-            background-color: #dcefdc;
-            color: #4f8d58;
+            background: #dff3e2;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 7px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px;
+            border: 1px solid #9bcf9f;
+            border-radius: 10px;
+        }
+
+        fieldset {
+            margin-top: 20px;
+            padding: 18px;
+            border: 2px solid #9bcf9f;
+            border-radius: 12px;
+        }
+
+        fieldset label {
+            display: inline;
+            margin-right: 15px;
+            font-weight: normal;
+        }
+
+        button {
+            margin-top: 25px;
+            background: #5b9a6f;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
         }
 
         footer {
-            background-color: #4f8d58;
+            background: #4d8560;
             color: white;
             text-align: center;
             padding: 25px;
-            margin-top: 50px;
         }
     </style>
 </head>
 
 <body>
 
-<header>
+    <header>
 
-    <h2>🌿 Makati Picnic Groves 🌿</h2>
+        <h1>🌿 Paco Park</h1>
 
-    <p>Green spaces and peaceful places around the city.</p>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../about.html">About</a></li>
-            <li><a href="../contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    </header>
 
-</header>
+    <main>
 
+        <section>
 
-<main>
+            <img src="../pacopark.jpg"
+                alt="Historic garden area inside Paco Park">
 
-    <section class="place-detail">
+            <h2>A Quiet Historical Garden</h2>
 
-        <h1>Paco Park</h1>
+            <p>
+                Paco Park is a peaceful garden surrounded by historic walls,
+                trees, and beautiful landscaping. It offers a quieter
+                atmosphere compared with the busy streets of Metro Manila.
+            </p>
 
-        <img
-            src="../pacopark.jpg"
-            alt="Green gardens and pathways at Paco Park">
+            <p>
+                I recommend Paco Park because it is perfect for visitors who
+                enjoy history, photography, peaceful walks, and relaxing
+                outdoor time. The calm environment makes it a lovely place
+                to slow down and enjoy nature.
+            </p>
 
-        <p class="description">
-            Paco Park is a historic garden and former cemetery that
-            offers a peaceful atmosphere away from the busiest parts
-            of Manila. Its circular layout, greenery, and historic
-            surroundings give it a unique atmosphere compared with
-            a typical city park.
-        </p>
+            <h2>Park Details</h2>
 
-        <p class="description">
-            I recommend Paco Park for visitors who enjoy quiet walks,
-            history, architecture, photography, and relaxing outdoor
-            spaces. It is a good choice when you want somewhere calm
-            and reflective.
-        </p>
+            <table>
+                <tr>
+                    <th>Detail</th>
+                    <th>Information</th>
+                </tr>
 
-        <h2>✨ Place Details</h2>
+                <tr>
+                    <td>Location</td>
+                    <td>Paco, Manila</td>
+                </tr>
 
-        <table>
+                <tr>
+                    <td>Best for</td>
+                    <td>Walking, photography, history, and relaxing</td>
+                </tr>
 
-            <tr>
-                <th>Location</th>
-                <td>Paco, Manila</td>
-            </tr>
+                <tr>
+                    <td>Price</td>
+                    <td>Affordable entrance fee</td>
+                </tr>
 
-            <tr>
-                <th>Opening Hours</th>
-                <td>8:00 AM – 5:00 PM</td>
-            </tr>
+                <tr>
+                    <td>Best time to visit</td>
+                    <td>Morning or late afternoon</td>
+                </tr>
+            </table>
 
-            <tr>
-                <th>Entrance Fee</th>
-                <td>Small entrance fee may apply</td>
-            </tr>
+        </section>
 
-            <tr>
-                <th>Best Time to Visit</th>
-                <td>Morning or late afternoon</td>
-            </tr>
+        <section>
 
-            <tr>
-                <th>Recommended For</th>
-                <td>
-                    Quiet walks, history, photography,
-                    and relaxing
-                </td>
-            </tr>
+            <h2>📍 Suggest a Place</h2>
 
-            <tr>
-                <th>Rating</th>
-                <td>⭐ 4.5/5</td>
-            </tr>
+            <form>
 
-        </table>
+                <label for="place-name">
+                    Place Name
+                </label>
 
-    </section>
+                <input type="text"
+                    id="place-name"
+                    name="place-name"
+                    required>
 
-</main>
+                <fieldset>
 
+                    <legend>
+                        What category best describes this place?
+                    </legend>
 
-<footer>
+                    <input type="radio"
+                        id="outdoors"
+                        name="category"
+                        value="outdoors">
 
-    <p>🌿 Makati Picnic Groves 🌿</p>
+                    <label for="outdoors">Outdoors</label>
 
-    <p>A little guide to finding green spaces in the city.</p>
+                    <input type="radio"
+                        id="food"
+                        name="category"
+                        value="food">
 
-</footer>
+                    <label for="food">Food</label>
+
+                    <input type="radio"
+                        id="relaxation"
+                        name="category"
+                        value="relaxation">
+
+                    <label for="relaxation">Relaxation Spot</label>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>
+                        What's good about this place?
+                    </legend>
+
+                    <input type="checkbox"
+                        id="affordable"
+                        name="good-points"
+                        value="affordable">
+
+                    <label for="affordable">Affordable</label>
+
+                    <input type="checkbox"
+                        id="quiet"
+                        name="good-points"
+                        value="quiet">
+
+                    <label for="quiet">Quiet and relaxing</label>
+
+                    <input type="checkbox"
+                        id="scenic"
+                        name="good-points"
+                        value="scenic">
+
+                    <label for="scenic">Beautiful and scenic</label>
+
+                </fieldset>
+
+                <label for="contact-email">
+                    Contact Email
+                </label>
+
+                <input type="email"
+                    id="contact-email"
+                    name="contact-email"
+                    required>
+
+                <button type="submit">
+                    Suggest this place
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>🌿 Makati Picnic Groves 🌿</p>
+    </footer>
 
 </body>
+
 </html>

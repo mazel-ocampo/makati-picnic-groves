@@ -1,33 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ayala Triangles Park - Makati Picnic Groves</title>
+    <title>Ayala Triangle Park | Makati Picnic Groves</title>
 
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f4fbf5;
+            background-color: #f4fff6;
             color: #333;
         }
 
         header {
-            background: linear-gradient(135deg, #72b77b, #b9dfb5);
+            background: linear-gradient(135deg, #5b9a6f, #9bcf9f);
             color: white;
             text-align: center;
             padding: 35px 20px;
         }
 
-        header h2 {
+        header h1 {
             margin: 0;
-            font-size: 30px;
-        }
-
-        header p {
-            margin: 10px 0;
         }
 
         nav ul {
@@ -38,76 +34,129 @@
 
         nav li {
             display: inline-block;
-            margin: 0 10px;
+            margin: 5px;
         }
 
         nav a {
             color: white;
             text-decoration: none;
             font-weight: bold;
-            background-color: rgba(255, 255, 255, 0.2);
             padding: 9px 16px;
+            background-color: rgba(255, 255, 255, 0.2);
             border-radius: 20px;
         }
 
         nav a:hover {
             background-color: white;
-            color: #4f8d58;
+            color: #5b9a6f;
         }
 
         main {
-            max-width: 900px;
+            max-width: 850px;
             margin: 40px auto;
             padding: 20px;
         }
 
-        .place-detail {
+        .place-card {
             background-color: white;
-            padding: 35px;
-            border-radius: 20px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(70, 120, 75, 0.15);
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 5px 15px rgba(50, 100, 70, 0.15);
         }
 
-        h1 {
-            color: #4f8d58;
-            font-size: 36px;
-        }
-
-        .place-detail img {
-            width: 600px;
-            max-width: 100%;
+        .place-card img {
+            width: 100%;
             height: auto;
             display: block;
-            margin: 20px auto;
-            border-radius: 18px;
+            border-radius: 15px;
+            margin-bottom: 25px;
         }
 
-        .description {
+        h2 {
+            color: #4d8560;
+        }
+
+        p {
             line-height: 1.7;
-            text-align: left;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 25px;
+            margin-top: 20px;
         }
 
         th,
         td {
-            border: 1px solid #ddd;
-            padding: 14px;
+            border: 1px solid #b7d8bd;
+            padding: 12px;
             text-align: left;
         }
 
         th {
-            background-color: #dcefdc;
-            color: #4f8d58;
+            background-color: #dff3e2;
+            color: #3d704e;
+        }
+
+        .suggest-form {
+            background-color: white;
+            padding: 30px;
+            margin-top: 35px;
+            border-radius: 18px;
+            box-shadow: 0 5px 15px rgba(50, 100, 70, 0.15);
+        }
+
+        .suggest-form label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 7px;
+            font-weight: bold;
+        }
+
+        .suggest-form input[type="text"],
+        .suggest-form input[type="email"] {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px;
+            border: 1px solid #9bcf9f;
+            border-radius: 10px;
+        }
+
+        fieldset {
+            border: 2px solid #9bcf9f;
+            border-radius: 12px;
+            margin-top: 20px;
+            padding: 18px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #4d8560;
+        }
+
+        fieldset label {
+            display: inline;
+            margin-right: 15px;
+            font-weight: normal;
+        }
+
+        button {
+            margin-top: 25px;
+            background-color: #5b9a6f;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3d704e;
         }
 
         footer {
-            background-color: #4f8d58;
+            background-color: #4d8560;
             color: white;
             text-align: center;
             padding: 25px;
@@ -118,103 +167,185 @@
 
 <body>
 
-<header>
+    <header>
+        <h1>🌳 Ayala Triangle Park</h1>
 
-    <h2>🌿 Makati Picnic Groves 🌿</h2>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <p>
-        Green spaces and peaceful places around the city.
-    </p>
+    <main>
 
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../about.html">About</a></li>
-            <li><a href="../contact.html">Contact</a></li>
-        </ul>
-    </nav>
+        <section class="place-card">
 
-</header>
+            <img src="../ayalatrianglescircle.jpg"
+                alt="Green open space and trees at Ayala Triangle Park">
 
+            <h2>A Peaceful Green Escape in Makati</h2>
 
-<main>
+            <p>
+                Ayala Triangle Park is a relaxing green space surrounded by
+                Makati's busy city buildings. It is a great place to take a
+                break, sit under the trees, enjoy a picnic, or simply spend
+                quiet time outdoors.
+            </p>
 
-    <section class="place-detail">
+            <p>
+                I recommend this park because it gives visitors a peaceful
+                place to relax while still being located in the middle of
+                Makati. It is especially nice for casual meetups, short
+                walks, and enjoying some fresh air.
+            </p>
 
-        <h1>Ayala Triangles Park</h1>
+            <h2>Park Details</h2>
 
-        <img
-            src="../ayalatrianglescircle.jpg"
-            alt="Green space at Ayala Triangles Park">
+            <table>
+                <tr>
+                    <th>Detail</th>
+                    <th>Information</th>
+                </tr>
 
-        <p class="description">
-            Ayala Triangles Park is a refreshing green space in
-            the middle of Makati's busy business district. The park
-            gives visitors a chance to slow down, take a walk, sit
-            among the greenery, and enjoy a peaceful outdoor break
-            while still being surrounded by the city.
-        </p>
+                <tr>
+                    <td>Location</td>
+                    <td>Ayala Avenue, Makati City</td>
+                </tr>
 
-        <p class="description">
-            I recommend this place for anyone who wants a convenient
-            escape from the busy streets. It is a nice spot for a
-            relaxing walk, a casual meet-up, taking photographs,
-            or simply enjoying some fresh air during the day.
-        </p>
+                <tr>
+                    <td>Best for</td>
+                    <td>Picnics, walking, relaxing, and meetups</td>
+                </tr>
 
-        <h2>✨ Place Details</h2>
+                <tr>
+                    <td>Price</td>
+                    <td>Free to visit</td>
+                </tr>
 
-        <table>
+                <tr>
+                    <td>Best time to visit</td>
+                    <td>Morning or late afternoon</td>
+                </tr>
+            </table>
 
-            <tr>
-                <th>Location</th>
-                <td>Makati City, Metro Manila</td>
-            </tr>
+        </section>
 
-            <tr>
-                <th>Opening Hours</th>
-                <td>6:00 AM – 10:00 PM</td>
-            </tr>
+        <section class="suggest-form">
 
-            <tr>
-                <th>Entrance Fee</th>
-                <td>Free</td>
-            </tr>
+            <h2>📍 Suggest a Place</h2>
 
-            <tr>
-                <th>Best Time to Visit</th>
-                <td>Late afternoon or early evening</td>
-            </tr>
+            <p>
+                Know another great place in Makati? Suggest it for the guide!
+            </p>
 
-            <tr>
-                <th>Recommended For</th>
-                <td>
-                    Walking, relaxing, photography,
-                    and casual meet-ups
-                </td>
-            </tr>
+            <form>
 
-            <tr>
-                <th>Rating</th>
-                <td>⭐ 4.6/5</td>
-            </tr>
+                <label for="place-name">
+                    Place Name
+                </label>
 
-        </table>
+                <input type="text"
+                    id="place-name"
+                    name="place-name"
+                    required>
 
-    </section>
+                <fieldset>
 
-</main>
+                    <legend>
+                        What category best describes this place?
+                    </legend>
 
+                    <input type="radio"
+                        id="outdoors"
+                        name="category"
+                        value="outdoors">
 
-<footer>
+                    <label for="outdoors">
+                        Outdoors
+                    </label>
 
-    <p>🌿 Makati Picnic Groves 🌿</p>
+                    <input type="radio"
+                        id="food"
+                        name="category"
+                        value="food">
 
-    <p>
-        A little guide to finding green spaces in the city.
-    </p>
+                    <label for="food">
+                        Food
+                    </label>
 
-</footer>
+                    <input type="radio"
+                        id="relaxation"
+                        name="category"
+                        value="relaxation">
+
+                    <label for="relaxation">
+                        Relaxation Spot
+                    </label>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>
+                        What's good about this place?
+                    </legend>
+
+                    <input type="checkbox"
+                        id="affordable"
+                        name="good-points"
+                        value="affordable">
+
+                    <label for="affordable">
+                        Affordable
+                    </label>
+
+                    <input type="checkbox"
+                        id="quiet"
+                        name="good-points"
+                        value="quiet">
+
+                    <label for="quiet">
+                        Quiet and relaxing
+                    </label>
+
+                    <input type="checkbox"
+                        id="scenic"
+                        name="good-points"
+                        value="scenic">
+
+                    <label for="scenic">
+                        Beautiful and scenic
+                    </label>
+
+                </fieldset>
+
+                <label for="contact-email">
+                    Contact Email
+                </label>
+
+                <input type="email"
+                    id="contact-email"
+                    name="contact-email"
+                    required>
+
+                <button type="submit">
+                    Suggest this place
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>🌿 Makati Picnic Groves 🌿</p>
+        <p>Discover peaceful places around Makati!</p>
+    </footer>
 
 </body>
+
 </html>
