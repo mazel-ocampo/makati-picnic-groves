@@ -57,14 +57,15 @@
             padding: 20px;
         }
 
-        .place-card {
+        section {
             background-color: white;
             padding: 30px;
             border-radius: 18px;
+            margin-bottom: 35px;
             box-shadow: 0 5px 15px rgba(50, 100, 70, 0.15);
         }
 
-        .place-card img {
+        section img {
             width: 100%;
             height: auto;
             display: block;
@@ -98,28 +99,21 @@
             color: #3d704e;
         }
 
-        .suggest-form {
-            background-color: white;
-            padding: 30px;
-            margin-top: 35px;
-            border-radius: 18px;
-            box-shadow: 0 5px 15px rgba(50, 100, 70, 0.15);
-        }
-
-        .suggest-form label {
+        label {
             display: block;
             margin-top: 15px;
             margin-bottom: 7px;
             font-weight: bold;
         }
 
-        .suggest-form input[type="text"],
-        .suggest-form input[type="email"] {
+        input[type="text"],
+        input[type="email"] {
             width: 100%;
             box-sizing: border-box;
             padding: 12px;
             border: 1px solid #9bcf9f;
             border-radius: 10px;
+            font-size: 16px;
         }
 
         fieldset {
@@ -162,12 +156,32 @@
             padding: 25px;
             margin-top: 50px;
         }
+
+        @media (max-width: 600px) {
+            main {
+                padding: 15px;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            nav li {
+                display: block;
+                margin: 12px 0;
+            }
+
+            nav a {
+                display: inline-block;
+            }
+        }
     </style>
 </head>
 
 <body>
 
     <header>
+
         <h1>🌳 Ayala Triangle Park</h1>
 
         <nav>
@@ -177,13 +191,15 @@
                 <li><a href="../contact.html">Contact</a></li>
             </ul>
         </nav>
+
     </header>
 
     <main>
 
-        <section class="place-card">
+        <section>
 
-            <img src="../ayalatrianglescircle.jpg"
+            <img
+                src="../ayalatrianglescircle.jpg"
                 alt="Green open space and trees at Ayala Triangle Park">
 
             <h2>A Peaceful Green Escape in Makati</h2>
@@ -205,6 +221,7 @@
             <h2>Park Details</h2>
 
             <table>
+
                 <tr>
                     <th>Detail</th>
                     <th>Information</th>
@@ -229,11 +246,13 @@
                     <td>Best time to visit</td>
                     <td>Morning or late afternoon</td>
                 </tr>
+
             </table>
 
         </section>
 
-        <section class="suggest-form">
+
+        <section>
 
             <h2>📍 Suggest a Place</h2>
 
@@ -247,10 +266,12 @@
                     Place Name
                 </label>
 
-                <input type="text"
+                <input
+                    type="text"
                     id="place-name"
                     name="place-name"
                     required>
+
 
                 <fieldset>
 
@@ -258,7 +279,8 @@
                         What category best describes this place?
                     </legend>
 
-                    <input type="radio"
+                    <input
+                        type="radio"
                         id="outdoors"
                         name="category"
                         value="outdoors">
@@ -267,7 +289,9 @@
                         Outdoors
                     </label>
 
-                    <input type="radio"
+
+                    <input
+                        type="radio"
                         id="food"
                         name="category"
                         value="food">
@@ -276,7 +300,9 @@
                         Food
                     </label>
 
-                    <input type="radio"
+
+                    <input
+                        type="radio"
                         id="relaxation"
                         name="category"
                         value="relaxation">
@@ -287,13 +313,15 @@
 
                 </fieldset>
 
+
                 <fieldset>
 
                     <legend>
                         What's good about this place?
                     </legend>
 
-                    <input type="checkbox"
+                    <input
+                        type="checkbox"
                         id="affordable"
                         name="good-points"
                         value="affordable">
@@ -302,7 +330,9 @@
                         Affordable
                     </label>
 
-                    <input type="checkbox"
+
+                    <input
+                        type="checkbox"
                         id="quiet"
                         name="good-points"
                         value="quiet">
@@ -311,7 +341,9 @@
                         Quiet and relaxing
                     </label>
 
-                    <input type="checkbox"
+
+                    <input
+                        type="checkbox"
                         id="scenic"
                         name="good-points"
                         value="scenic">
@@ -322,14 +354,17 @@
 
                 </fieldset>
 
+
                 <label for="contact-email">
                     Contact Email
                 </label>
 
-                <input type="email"
+                <input
+                    type="email"
                     id="contact-email"
                     name="contact-email"
                     required>
+
 
                 <button type="submit">
                     Suggest this place
@@ -340,6 +375,7 @@
         </section>
 
     </main>
+
 
     <footer>
         <p>🌿 Makati Picnic Groves 🌿</p>
