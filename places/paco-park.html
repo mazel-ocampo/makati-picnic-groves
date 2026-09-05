@@ -7,129 +7,7 @@
 
     <title>Paco Park | Makati Picnic Groves</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4fff6;
-            color: #333;
-        }
-
-        header {
-            background: linear-gradient(135deg, #5b9a6f, #9bcf9f);
-            color: white;
-            text-align: center;
-            padding: 35px 20px;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        nav li {
-            display: inline-block;
-            margin: 5px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 9px 16px;
-            background-color: rgba(255,255,255,0.2);
-            border-radius: 20px;
-        }
-
-        main {
-            max-width: 850px;
-            margin: 40px auto;
-            padding: 20px;
-        }
-
-        section {
-            background: white;
-            padding: 30px;
-            border-radius: 18px;
-            margin-bottom: 35px;
-        }
-
-        img {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 15px;
-        }
-
-        p {
-            line-height: 1.7;
-        }
-
-        h2 {
-            color: #4d8560;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        th, td {
-            border: 1px solid #b7d8bd;
-            padding: 12px;
-            text-align: left;
-        }
-
-        th {
-            background: #dff3e2;
-        }
-
-        label {
-            display: block;
-            margin-top: 15px;
-            margin-bottom: 7px;
-            font-weight: bold;
-        }
-
-        input[type="text"],
-        input[type="email"] {
-            width: 100%;
-            box-sizing: border-box;
-            padding: 12px;
-            border: 1px solid #9bcf9f;
-            border-radius: 10px;
-        }
-
-        fieldset {
-            margin-top: 20px;
-            padding: 18px;
-            border: 2px solid #9bcf9f;
-            border-radius: 12px;
-        }
-
-        fieldset label {
-            display: inline;
-            margin-right: 15px;
-            font-weight: normal;
-        }
-
-        button {
-            margin-top: 25px;
-            background: #5b9a6f;
-            color: white;
-            border: none;
-            padding: 12px 25px;
-            border-radius: 25px;
-            cursor: pointer;
-        }
-
-        footer {
-            background: #4d8560;
-            color: white;
-            text-align: center;
-            padding: 25px;
-        }
-    </style>
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
@@ -152,7 +30,8 @@
 
         <section>
 
-            <img src="../pacopark.jpg"
+            <img
+                src="../pacopark.jpg"
                 alt="Historic garden area inside Paco Park">
 
             <h2>A Quiet Historical Garden</h2>
@@ -173,6 +52,7 @@
             <h2>Park Details</h2>
 
             <table>
+
                 <tr>
                     <th>Detail</th>
                     <th>Information</th>
@@ -197,9 +77,11 @@
                     <td>Best time to visit</td>
                     <td>Morning or late afternoon</td>
                 </tr>
+
             </table>
 
         </section>
+
 
         <section>
 
@@ -211,10 +93,12 @@
                     Place Name
                 </label>
 
-                <input type="text"
+                <input
+                    type="text"
                     id="place-name"
                     name="place-name"
                     required>
+
 
                 <fieldset>
 
@@ -222,28 +106,40 @@
                         What category best describes this place?
                     </legend>
 
-                    <input type="radio"
+                    <input
+                        type="radio"
                         id="outdoors"
                         name="category"
                         value="outdoors">
 
-                    <label for="outdoors">Outdoors</label>
+                    <label for="outdoors">
+                        Outdoors
+                    </label>
 
-                    <input type="radio"
+
+                    <input
+                        type="radio"
                         id="food"
                         name="category"
                         value="food">
 
-                    <label for="food">Food</label>
+                    <label for="food">
+                        Food
+                    </label>
 
-                    <input type="radio"
+
+                    <input
+                        type="radio"
                         id="relaxation"
                         name="category"
                         value="relaxation">
 
-                    <label for="relaxation">Relaxation Spot</label>
+                    <label for="relaxation">
+                        Relaxation Spot
+                    </label>
 
                 </fieldset>
+
 
                 <fieldset>
 
@@ -251,37 +147,51 @@
                         What's good about this place?
                     </legend>
 
-                    <input type="checkbox"
+                    <input
+                        type="checkbox"
                         id="affordable"
                         name="good-points"
                         value="affordable">
 
-                    <label for="affordable">Affordable</label>
+                    <label for="affordable">
+                        Affordable
+                    </label>
 
-                    <input type="checkbox"
+
+                    <input
+                        type="checkbox"
                         id="quiet"
                         name="good-points"
                         value="quiet">
 
-                    <label for="quiet">Quiet and relaxing</label>
+                    <label for="quiet">
+                        Quiet and relaxing
+                    </label>
 
-                    <input type="checkbox"
+
+                    <input
+                        type="checkbox"
                         id="scenic"
                         name="good-points"
                         value="scenic">
 
-                    <label for="scenic">Beautiful and scenic</label>
+                    <label for="scenic">
+                        Beautiful and scenic
+                    </label>
 
                 </fieldset>
+
 
                 <label for="contact-email">
                     Contact Email
                 </label>
 
-                <input type="email"
+                <input
+                    type="email"
                     id="contact-email"
                     name="contact-email"
                     required>
+
 
                 <button type="submit">
                     Suggest this place
@@ -293,8 +203,11 @@
 
     </main>
 
+
     <footer>
+
         <p>🌿 Makati Picnic Groves 🌿</p>
+
     </footer>
 
 </body>
