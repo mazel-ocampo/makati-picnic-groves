@@ -127,11 +127,21 @@ main {
 }
 
 
+/* ---------- Place Grid / 6.4 Flexbox ---------- */
+
+.place-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+
 /* ---------- Place Cards ---------- */
 
 .place-card {
+    flex: 1 1 240px;
     padding: 24px;
-    margin-bottom: 24px;
+    margin-bottom: 0;
     background: var(--white);
     border-left: 6px solid var(--brand);
     border-radius: 18px;
