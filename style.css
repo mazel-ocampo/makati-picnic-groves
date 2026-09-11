@@ -1,21 +1,16 @@
-/* =========================
-   VARIABLES
-========================= */
-
 :root {
-    --brand: #4f8d58;
-    --brand-dark: #3d704e;
+    --brand: #4f8a5b;
+    --brand-dark: #356b42;
+    --green-light: #dff2e3;
+    --yellow: #f4c95d;
     --ink: #333333;
-    --muted: #b7d8bd;
-    --background: #f4fbf5;
-    --light: #ffffff;
-    --accent: #b06f1e;
+    --muted: #777777;
+    --background: #f6fbf5;
+    --white: #ffffff;
 }
 
 
-/* =========================
-   BASE STYLES
-========================= */
+/* ---------- Base Styles ---------- */
 
 * {
     box-sizing: border-box;
@@ -25,7 +20,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: var(--background);
+    background: var(--background);
     color: var(--ink);
 }
 
@@ -33,270 +28,228 @@ img {
     max-width: 100%;
 }
 
-
-/* =========================
-   HEADER AND NAVIGATION
-========================= */
-
-header {
-    background: linear-gradient(135deg, #72b77b, #b9dfb5);
-    color: var(--light);
-    text-align: center;
-    padding: 35px 20px;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 42px;
-}
-
-header p {
-    font-size: 17px;
-    margin: 10px 0 20px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0 0;
-}
-
-nav li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-nav a {
-    color: var(--light);
-    text-decoration: none;
-    font-weight: bold;
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 9px 16px;
-    border-radius: 20px;
-}
-
-nav a:hover {
-    background-color: var(--light);
+h1,
+h2,
+h3 {
     color: var(--brand);
 }
 
 
-/* =========================
-   MAIN CONTENT
-========================= */
+/* ---------- Header / 6.3 Flexbox ---------- */
 
-main {
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 20px;
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    min-height: 90px;
+    padding: 22px 40px;
+    background: linear-gradient(135deg, #79b883, #b7dfad);
+    box-shadow: 0 4px 12px rgba(70, 120, 80, 0.15);
 }
 
+.site-header h1 {
+    margin: 0;
+    color: var(--white);
+    font-size: clamp(22px, 4vw, 34px);
+}
+
+.site-header nav ul {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.site-header nav li {
+    margin: 0;
+}
+
+.site-header nav a {
+    display: block;
+    padding: 8px 16px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.7);
+    color: var(--brand-dark);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.site-header nav a:hover {
+    background: var(--white);
+    color: var(--brand);
+    transform: translateY(-2px);
+}
+
+
+/* ---------- Main Content ---------- */
+
+main {
+    width: min(1100px, calc(100% - 40px));
+    margin: 40px auto;
+    padding: 20px;
+    animation: fadeIn 0.5s ease;
+}
+
+
+/* ---------- Welcome / Flexbox Centering ---------- */
+
 .welcome {
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-bottom: 35px;
+    padding: 30px;
 }
 
 .welcome h2 {
-    color: var(--brand);
-}
-
-
-/* =========================
-   PLACE CARDS
-========================= */
-
-.places {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-}
-
-.place-card {
-    width: 250px;
-    background-color: var(--light);
-    padding: 20px;
-    border-radius: 18px;
-    border-left: 6px solid var(--brand);
-    margin-bottom: 25px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(70, 120, 75, 0.15);
-    transition: transform 0.2s;
-}
-
-.place-card:hover {
-    transform: translateY(-6px);
-}
-
-.place-card img {
-    width: 220px;
-    height: 180px;
-    max-width: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-.place-card h3 {
-    color: var(--brand);
-    font-size: 21px;
-}
-
-.place-card p {
-    line-height: 1.5;
-}
-
-.rating {
-    color: var(--accent);
-    font-weight: bold;
-}
-
-.read-more {
-    display: inline-block;
-    margin-top: 10px;
-    background-color: var(--brand);
-    color: var(--light);
-    text-decoration: none;
-    padding: 9px 16px;
-    border-radius: 20px;
-    font-weight: bold;
-}
-
-.read-more:hover {
-    background-color: var(--brand-dark);
-}
-
-
-/* =========================
-   ABOUT PAGE
-========================= */
-
-.about-card {
-    background-color: var(--light);
-    padding: 35px;
-    border-radius: 20px;
-    box-shadow: 0 5px 15px rgba(70, 120, 75, 0.15);
-    text-align: center;
-}
-
-.about-card h2 {
-    color: var(--brand);
+    margin-bottom: 10px;
     font-size: 30px;
 }
 
-.about-card p {
-    line-height: 1.7;
-    text-align: left;
+.welcome h2::before {
+    content: "🌱 ";
 }
 
-.about-image {
-    width: 600px;
-    max-width: 100%;
-    height: auto;
+.welcome h2::after {
+    content: " 🧺";
+}
+
+.welcome p {
+    max-width: 650px;
+    color: var(--muted);
+}
+
+
+/* ---------- Place Cards ---------- */
+
+.place-card {
+    padding: 24px;
+    margin-bottom: 24px;
+    background: var(--white);
+    border-left: 6px solid var(--brand);
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(70, 120, 80, 0.12);
+    transition: 0.2s ease;
+}
+
+.place-card:hover {
+    transform: translateY(-5px);
+}
+
+.place-card h2,
+.place-card h3 {
+    color: var(--brand);
+    font-size: 24px;
+}
+
+.place-card img {
     display: block;
-    margin: 25px auto;
-    border-radius: 18px;
-}
-
-.highlight {
-    background-color: #edf7ed;
-    padding: 20px;
-    border-radius: 15px;
-    margin-top: 25px;
-}
-
-.highlight h3 {
-    color: var(--brand);
-}
-
-
-/* =========================
-   CONTACT PAGE
-========================= */
-
-.contact-card {
-    background-color: var(--light);
-    padding: 35px;
-    border-radius: 20px;
-    box-shadow: 0 5px 15px rgba(70, 120, 75, 0.15);
-}
-
-.contact-card h2 {
-    color: var(--brand);
-    text-align: center;
-}
-
-.contact-card > p {
-    text-align: center;
-}
-
-
-/* =========================
-   PLACE DETAILS
-========================= */
-
-main > section {
-    background-color: var(--light);
-    padding: 30px;
-    border-radius: 18px;
-    margin-bottom: 35px;
-    box-shadow: 0 5px 15px rgba(70, 120, 75, 0.15);
-}
-
-main > section img {
     width: 100%;
-    height: auto;
-    display: block;
+    max-width: 500px;
+    margin: 15px auto;
     border-radius: 15px;
-    margin-bottom: 25px;
 }
 
-main > section h2 {
-    color: var(--brand);
+
+/* ---------- Buttons / Links ---------- */
+
+.details-link,
+button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 25px;
+    background: var(--brand);
+    color: var(--white);
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
 }
+
+.details-link:hover,
+button:hover {
+    background: var(--brand-dark);
+    transform: translateY(-2px);
+}
+
+
+/* ---------- Tables ---------- */
 
 table {
     width: 100%;
-    border-collapse: collapse;
     margin-top: 20px;
+    border-collapse: collapse;
 }
 
 th,
 td {
-    border: 1px solid var(--muted);
     padding: 12px;
+    border: 1px solid #c9dfcc;
     text-align: left;
 }
 
 th {
-    background-color: #dff3e2;
+    width: 30%;
+    background: var(--green-light);
     color: var(--brand-dark);
 }
 
 
-/* =========================
-   FORMS
-========================= */
+/* ---------- About / Information Cards ---------- */
+
+.about-card,
+.info-card,
+.contact-card,
+.suggest-section {
+    padding: 28px;
+    margin-bottom: 25px;
+    background: var(--white);
+    border-left: 6px solid var(--brand);
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(70, 120, 80, 0.12);
+}
+
+.about-card img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+
+/* ---------- Forms ---------- */
 
 fieldset {
-    padding: 25px;
-    border: 2px solid var(--muted);
-    border-radius: 15px;
+    padding: 24px;
     margin-top: 20px;
+    border: 2px solid #b9d8bd;
+    border-radius: 15px;
 }
 
 legend {
-    color: var(--brand);
-    font-weight: bold;
-    font-size: 20px;
     padding: 0 10px;
+    color: var(--brand);
+    font-size: 20px;
+    font-weight: bold;
 }
 
 label {
     display: block;
     margin-top: 15px;
     margin-bottom: 7px;
-    font-weight: bold;
     color: var(--brand-dark);
+    font-weight: bold;
 }
 
 input,
@@ -304,110 +257,47 @@ select,
 textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid var(--muted);
+    border: 1px solid #b9d8bd;
     border-radius: 10px;
+    background: #fbfffb;
     font-family: Arial, sans-serif;
     font-size: 15px;
-    background-color: var(--light);
 }
 
 textarea {
-    min-height: 150px;
+    min-height: 140px;
     resize: vertical;
 }
-
-
-/* =========================
-   FORM FOCUS
-========================= */
 
 input:focus,
 select:focus,
 textarea:focus {
-    outline: 3px solid var(--brand);
+    outline: 3px solid var(--yellow);
     outline-offset: 2px;
 }
 
 
-/* =========================
-   RADIO AND CHECKBOX OPTIONS
-========================= */
-
-fieldset input[type="radio"],
-fieldset input[type="checkbox"] {
-    width: auto;
-}
-
-fieldset label {
-    display: inline;
-    margin-right: 15px;
-    font-weight: normal;
-}
-
-
-/* =========================
-   BUTTONS
-========================= */
-
-button,
-.send-button {
-    margin-top: 25px;
-    background-color: var(--brand);
-    color: var(--light);
-    padding: 12px 25px;
-    border: none;
-    border-radius: 25px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-button:hover,
-.send-button:hover {
-    background-color: var(--brand-dark);
-}
-
-
-/* =========================
-   FOOTER
-========================= */
+/* ---------- Footer ---------- */
 
 footer {
-    background-color: var(--brand);
-    color: var(--light);
-    text-align: center;
     padding: 25px;
     margin-top: 50px;
+    background: var(--brand-dark);
+    color: var(--white);
+    text-align: center;
 }
 
 
-/* =========================
-   MOBILE STYLES
-========================= */
+/* ---------- Animation ---------- */
 
-@media (max-width: 600px) {
-
-    main {
-        padding: 15px;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
     }
 
-    main > section,
-    .about-card,
-    .contact-card {
-        padding: 20px;
-    }
-
-    nav li {
-        display: block;
-        margin: 12px 0;
-    }
-
-    nav a {
-        display: inline-block;
-    }
-
-    .place-card {
-        width: 100%;
-        max-width: 350px;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

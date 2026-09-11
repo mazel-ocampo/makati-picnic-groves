@@ -5,200 +5,197 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Paco Park | Makati Picnic Groves</title>
+    <title>Paco Park - Makati Picnic Groves</title>
 
     <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
-<header>
+    <!-- ---------- Header ---------- -->
 
-    <h1>🌿 Paco Park</h1>
+    <header class="site-header">
 
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../about.html">About</a></li>
-            <li><a href="../contact.html">Contact</a></li>
-        </ul>
-    </nav>
+        <h1>Makati Picnic Groves 🌿</h1>
 
-</header>
+        <nav>
+            <ul>
 
-<main>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
 
-    <section>
+                <li>
+                    <a href="../about.html">About</a>
+                </li>
 
-        <img
-            src="../pacopark.jpg"
-            alt="Historic garden area inside Paco Park">
+                <li>
+                    <a href="../contact.html">Contact</a>
+                </li>
 
-        <h2>A Quiet Historical Garden</h2>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- ---------- Main Content ---------- -->
+
+    <main>
+
+        <section class="welcome">
+
+            <h2>Paco Park</h2>
+
+            <p>
+                A peaceful historic garden surrounded by greenery
+                and heritage.
+            </p>
+
+        </section>
+
+
+        <section class="place-card">
+
+            <img
+                src="../pacopark.jpg"
+                alt="Paco Park"
+            >
+
+            <h2>About the Place</h2>
+
+            <p>
+                Paco Park is a historic garden and former cemetery
+                located in Paco, Manila. It is known for its circular
+                walls, peaceful garden areas, chapel, and historic
+                atmosphere.
+            </p>
+
+            <p>
+                Visitors can enjoy walking around the gardens,
+                taking photographs, learning about its history,
+                and spending time in a quiet outdoor environment.
+            </p>
+
+
+            <h2>Place Details</h2>
+
+            <table>
+
+                <tr>
+                    <th>Location</th>
+                    <td>Paco, Manila</td>
+                </tr>
+
+                <tr>
+                    <th>Type</th>
+                    <td>Historic Park and Garden</td>
+                </tr>
+
+                <tr>
+                    <th>Price</th>
+                    <td>Free</td>
+                </tr>
+
+                <tr>
+                    <th>Best For</th>
+                    <td>History, photography, walking, relaxing</td>
+                </tr>
+
+                <tr>
+                    <th>Rating</th>
+                    <td>⭐ 4.5/5</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+
+        <section class="suggest-section">
+
+            <h2>Suggest a Place</h2>
+
+            <p>
+                Know another peaceful place worth visiting?
+                Send us your suggestion!
+            </p>
+
+            <form>
+
+                <fieldset>
+
+                    <legend>Place Suggestion</legend>
+
+
+                    <label for="place-name">
+                        Place Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="place-name"
+                        name="place"
+                        required
+                    >
+
+
+                    <label>
+                        Category
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="category"
+                            value="park"
+                        >
+                        Park
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="category"
+                            value="garden"
+                        >
+                        Garden
+                    </label>
+
+
+                    <label for="reason">
+                        Why should we include it?
+                    </label>
+
+                    <textarea
+                        id="reason"
+                        name="reason"
+                        required
+                    ></textarea>
+
+
+                    <button type="submit">
+                        Send Suggestion
+                    </button>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
 
         <p>
-            Paco Park is a peaceful garden surrounded by historic walls,
-            trees, and beautiful landscaping. It offers a quieter
-            atmosphere compared with the busy streets of Metro Manila.
+            &copy; 2026 Makati Picnic Groves.
+            Student-created places guide.
         </p>
 
-        <p>
-            I recommend Paco Park because it is perfect for visitors who
-            enjoy history, photography, peaceful walks, and relaxing
-            outdoor time. The calm environment makes it a lovely place
-            to slow down and enjoy nature.
-        </p>
-
-        <h2>Park Details</h2>
-
-        <table>
-
-            <tr>
-                <th>Detail</th>
-                <th>Information</th>
-            </tr>
-
-            <tr>
-                <td>Location</td>
-                <td>Paco, Manila</td>
-            </tr>
-
-            <tr>
-                <td>Best for</td>
-                <td>Walking, photography, history, and relaxing</td>
-            </tr>
-
-            <tr>
-                <td>Price</td>
-                <td>Affordable entrance fee</td>
-            </tr>
-
-            <tr>
-                <td>Best time to visit</td>
-                <td>Morning or late afternoon</td>
-            </tr>
-
-        </table>
-
-    </section>
-
-
-    <section>
-
-        <h2>📍 Suggest a Place</h2>
-
-        <p>
-            Know another great place in Makati? Suggest it for the guide!
-        </p>
-
-        <form>
-
-            <label for="place-name">Place Name</label>
-
-            <input
-                type="text"
-                id="place-name"
-                name="place-name"
-                required>
-
-
-            <fieldset>
-
-                <legend>
-                    What category best describes this place?
-                </legend>
-
-                <input
-                    type="radio"
-                    id="outdoors"
-                    name="category"
-                    value="outdoors">
-
-                <label for="outdoors">Outdoors</label>
-
-
-                <input
-                    type="radio"
-                    id="food"
-                    name="category"
-                    value="food">
-
-                <label for="food">Food</label>
-
-
-                <input
-                    type="radio"
-                    id="relaxation"
-                    name="category"
-                    value="relaxation">
-
-                <label for="relaxation">Relaxation Spot</label>
-
-            </fieldset>
-
-
-            <fieldset>
-
-                <legend>
-                    What's good about this place?
-                </legend>
-
-                <input
-                    type="checkbox"
-                    id="affordable"
-                    name="good-points"
-                    value="affordable">
-
-                <label for="affordable">Affordable</label>
-
-
-                <input
-                    type="checkbox"
-                    id="quiet"
-                    name="good-points"
-                    value="quiet">
-
-                <label for="quiet">Quiet and relaxing</label>
-
-
-                <input
-                    type="checkbox"
-                    id="scenic"
-                    name="good-points"
-                    value="scenic">
-
-                <label for="scenic">Beautiful and scenic</label>
-
-            </fieldset>
-
-
-            <label for="contact-email">Contact Email</label>
-
-            <input
-                type="email"
-                id="contact-email"
-                name="contact-email"
-                required>
-
-
-            <button type="submit">
-                Suggest this place
-            </button>
-
-        </form>
-
-    </section>
-
-</main>
-
-
-<footer>
-
-    <p>🌿 Makati Picnic Groves 🌿</p>
-
-    <p>Discover peaceful places around Makati!</p>
-
-</footer>
+    </footer>
 
 </body>
+
 </html>

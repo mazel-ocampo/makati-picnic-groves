@@ -5,78 +5,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Salcedo Park | Makati Picnic Groves</title>
+    <title>Salcedo Park - Makati Picnic Groves</title>
 
     <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
-    <header>
+    <!-- ---------- Header ---------- -->
 
-        <h1>🌳 Salcedo Park</h1>
+    <header class="site-header">
+
+        <h1>Makati Picnic Groves 🌿</h1>
 
         <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="../contact.html">Contact</a></li>
+
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="../about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="../contact.html">Contact</a>
+                </li>
+
             </ul>
         </nav>
 
     </header>
 
+
+    <!-- ---------- Main Content ---------- -->
+
     <main>
+
+        <section class="welcome">
+
+            <h2>Salcedo Park</h2>
+
+            <p>
+                A convenient green space for relaxing and enjoying
+                a peaceful outdoor break.
+            </p>
+
+        </section>
+
 
         <section class="place-card">
 
             <img
                 src="../salcedopark.jpg"
-                alt="Green outdoor space at Salcedo Park">
+                alt="Salcedo Park"
+            >
 
-            <h2>Salcedo Park</h2>
+            <h2>About the Place</h2>
 
             <p>
-                Salcedo Park is a pleasant green space in Makati where
-                visitors can take a break from the busy city. With trees,
-                open areas, and a calm atmosphere, it is a nice place for
-                relaxing outdoors.
+                Salcedo Park, also known as Jaime C. Velasquez Park,
+                is located in Salcedo Village, Makati City. It offers
+                open grassy areas, walking paths, trees, and spaces
+                where visitors can relax.
             </p>
 
             <p>
-                I recommend Salcedo Park because it is a convenient place
-                for casual meetups, short walks, and peaceful outdoor time.
-                It is especially enjoyable when you simply want to sit down,
-                enjoy the surroundings, and spend time with friends or family.
+                The park is also known for the Salcedo Saturday Market,
+                making it a popular weekend destination for food,
+                shopping, and outdoor activities.
             </p>
 
-            <h2>Park Details</h2>
+
+            <h2>Place Details</h2>
 
             <table>
 
                 <tr>
-                    <th>Detail</th>
-                    <th>Information</th>
-                </tr>
-
-                <tr>
-                    <td>Location</td>
+                    <th>Location</th>
                     <td>Salcedo Village, Makati City</td>
                 </tr>
 
                 <tr>
-                    <td>Best for</td>
-                    <td>Relaxing, walking, casual meetups, and outdoor breaks</td>
+                    <th>Type</th>
+                    <td>Urban Park</td>
                 </tr>
 
                 <tr>
-                    <td>Price</td>
-                    <td>Free to visit</td>
+                    <th>Price</th>
+                    <td>Free</td>
                 </tr>
 
                 <tr>
-                    <td>Best time to visit</td>
-                    <td>Morning or late afternoon</td>
+                    <th>Best For</th>
+                    <td>Relaxing, walking, meetups, outdoor breaks</td>
+                </tr>
+
+                <tr>
+                    <th>Rating</th>
+                    <td>⭐ 4.5/5</td>
                 </tr>
 
             </table>
@@ -86,105 +114,71 @@
 
         <section class="suggest-section">
 
-            <h2>📍 Suggest a Place</h2>
+            <h2>Suggest a Place</h2>
 
             <p>
-                Know another great place in Makati? Suggest it for the guide!
+                Have another park or green space in mind?
+                Tell us about it!
             </p>
 
             <form>
 
-                <label for="place-name">Place Name</label>
-
-                <input
-                    type="text"
-                    id="place-name"
-                    name="place-name"
-                    required>
-
-
                 <fieldset>
 
-                    <legend>
-                        What category best describes this place?
-                    </legend>
+                    <legend>Place Suggestion</legend>
+
+
+                    <label for="place-name">
+                        Place Name
+                    </label>
 
                     <input
-                        type="radio"
-                        id="outdoors"
-                        name="category"
-                        value="outdoors">
-
-                    <label for="outdoors">Outdoors</label>
-
-
-                    <input
-                        type="radio"
-                        id="food"
-                        name="category"
-                        value="food">
-
-                    <label for="food">Food</label>
+                        type="text"
+                        id="place-name"
+                        name="place"
+                        required
+                    >
 
 
-                    <input
-                        type="radio"
-                        id="relaxation"
-                        name="category"
-                        value="relaxation">
+                    <label>
+                        Category
+                    </label>
 
-                    <label for="relaxation">Relaxation Spot</label>
+                    <label>
+                        <input
+                            type="radio"
+                            name="category"
+                            value="park"
+                        >
+                        Park
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="category"
+                            value="garden"
+                        >
+                        Garden
+                    </label>
+
+
+                    <label for="reason">
+                        Why should we include it?
+                    </label>
+
+                    <textarea
+                        id="reason"
+                        name="reason"
+                        required
+                    ></textarea>
+
+
+                    <button type="submit">
+                        Send Suggestion
+                    </button>
 
                 </fieldset>
-
-
-                <fieldset>
-
-                    <legend>
-                        What's good about this place?
-                    </legend>
-
-                    <input
-                        type="checkbox"
-                        id="affordable"
-                        name="good-points"
-                        value="affordable">
-
-                    <label for="affordable">Affordable</label>
-
-
-                    <input
-                        type="checkbox"
-                        id="quiet"
-                        name="good-points"
-                        value="quiet">
-
-                    <label for="quiet">Quiet and relaxing</label>
-
-
-                    <input
-                        type="checkbox"
-                        id="scenic"
-                        name="good-points"
-                        value="scenic">
-
-                    <label for="scenic">Beautiful and scenic</label>
-
-                </fieldset>
-
-
-                <label for="contact-email">Contact Email</label>
-
-                <input
-                    type="email"
-                    id="contact-email"
-                    name="contact-email"
-                    required>
-
-
-                <button type="submit">
-                    Suggest this place
-                </button>
 
             </form>
 
@@ -194,8 +188,12 @@
 
 
     <footer>
-        <p>🌿 Makati Picnic Groves 🌿</p>
-        <p>Discover peaceful places around Makati!</p>
+
+        <p>
+            &copy; 2026 Makati Picnic Groves.
+            Student-created places guide.
+        </p>
+
     </footer>
 
 </body>
